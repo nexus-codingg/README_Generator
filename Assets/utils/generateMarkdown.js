@@ -33,9 +33,10 @@ function generateMarkdown(data) {
   return `  
   # ${title}
   
-  ## Description
-  ${description}
-  \nThis project was created using: ${technology}
+## Description
+ ${description}
+ 
+ \nThis project was created using:  ${technology}
   
   ## Table of Contents
   - [Installation](#installation)
@@ -50,7 +51,8 @@ function generateMarkdown(data) {
 
   ## Usage
   ${usage}
-  ![CLI README App Demo](Assets/utils/CLI-App_Demo.gif)
+
+  \n![CLI README App Demo](Assets/utils/CLI-App_Demo.gif)
 
   ## License
   ${license}
