@@ -19,7 +19,7 @@ This project was created using: Node.js, Javascript
 
   ## Usage
   This project can assist developers to make quick, easy README files for their GitHub projects through their terminal
-  \n![CLI README App Demo](Assets/utils/CLI-App_Demo.gif)
+  ![CLI README App Demo](Assets/utils/CLI-App_Demo.gif)
 
   ## License
   No licenses were used for this project
