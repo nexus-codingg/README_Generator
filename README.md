@@ -2,9 +2,9 @@
   # CLI README Generator
   
   ## Description
-    A simple command-line (CLI) application that dynamically generates a README.md from a user's input.
+  A simple command-line (CLI) application that dynamically generates a README.md from a user's input.
     
-This project was created using:Node.js, Javascript
+This project was created using: Node.js, Javascript
   
   ## Table of Contents
   - [Installation](#installation)
@@ -19,7 +19,7 @@ This project was created using:Node.js, Javascript
 
   ## Usage
   This project can assist developers to make quick, easy README files for their GitHub projects through their terminal
-  ![CLI README App Demo](Assets/utils/CLI-App_Demo.gif)
+  \n![CLI README App Demo](Assets/utils/CLI-App_Demo.gif)
 
   ## License
   No licenses were used for this project
