@@ -59,7 +59,7 @@ function promptUser() {
             type: "list",
             message: "Please select license name (use arrow keys):",
             name: "license",
-            choices: ["MIT", "APACHE 2.0", "GPL", "Mozilla", "No licenses were used for this project"],
+            choices: ["MIT", "Apache", "GPL", "Mozilla", "No licenses were used for this project"],
         },
         {
             type: "input",

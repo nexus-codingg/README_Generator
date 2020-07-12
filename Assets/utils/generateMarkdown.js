@@ -1,11 +1,16 @@
 // license badge img info
-const licenseBadges = {
-  "Apache": "[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-  "MIT": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
-  "GPL": "[![License: GPL](https://img.shields.io/badge/License-GPL%20ver2%2Fver3-orange)](https://opensource.org/licenses/gpl-license)",
-  "Mozilla": "[![License: MIT](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-red)](https://opensource.org/licenses/MIT)"
-}
-
+// const licenseBadges = {
+//   "Apache": "[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+//   "MIT": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+//   "GPL": "[![License: GPL](https://img.shields.io/badge/License-GPL%20ver2%2Fver3-orange)](https://opensource.org/licenses/gpl-license)",
+//   "Mozilla": "[![License: MIT](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-red)](https://opensource.org/licenses/MPL-2.0)"
+// }
+// ${licenseBadges[matchedLicense]}
+// to look at the keys in licenseBadges and create a linked badge
+// function match(input, obj){ 
+//   let matched = Object.keys(obj).find(key => input.toLowerCase().search(key) > -1);
+//   return obj[matched] || "No licenses were used for this project";
+// }
 
 // creates the README markdown format
 function generateMarkdown(data) {
@@ -23,20 +28,15 @@ function generateMarkdown(data) {
   let technology = data.technology;
   let contact = data.contact;
   let url = data.url;
+  // let matchedLicense = match(license, licenseBadges);
 
-  return `
-  [![Contributors](https://img.shields.io/github/contributors/${username}/${title})](https://github.com/${username}/${title}/graphs/contributors)
-  
+  return `  
   # ${title}
   
   ## Description
-    ${description}
-    \nThis project was created using:
-    * ${technology}
-
-    ### License
-    ${licenseBadges[license]}
-
+  ${description}
+  \nThis project was created using: ${technology}
+  
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
@@ -46,13 +46,11 @@ function generateMarkdown(data) {
   - [Questions](#Questions)
 
   ## Installation
-  The application will be invoked with the following command: 
-  node index.js
-  Packages required to run this program are: ${installation}
+  This application is installed by doing the following: ${installation}
 
   ## Usage
   ${usage}
-  ![Image Alt Text](/assets/video.gif)
+  ![CLI README App Demo](Assets/utils/CLI-App_Demo.gif)
 
   ## License
   ${license}
@@ -61,15 +59,16 @@ function generateMarkdown(data) {
   ${contributer}
 
   ## Tests
-  To test, run the following command: ${tests}
+  ${tests}
 
-  ## Contact
+  # Contact
   \n![Badge](https://img.shields.io/badge/Github-${username}-green) 
-  \nGitHub Username: https://github.com/${username}
   \n![Profile Image](https://github.com/${username}.png?size=200)
-  \nBest form of contact: ${contact}
-  \nGitHub Project link: ${url}
-  \nContact email: ${email}
+  \n**Contact email:** ${email}
+  \n**GitHub Username:**  https://github.com/${username}
+  \n**Best form of contact:** ${contact}
+  \nG**GitHub Project link:** ${url}
+  
 
   `
 
