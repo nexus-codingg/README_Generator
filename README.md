@@ -15,7 +15,9 @@ This project was created using: Node.js, Javascript
   - [Questions](#Questions)
 
   ## Installation
-  This application is installed by doing the following: In your terminal, enter "node index.js." Also make sure you have downloaded all node module packages, such as "inquirer". To download, enter "npm i inquirer" into your terminal.
+  This application is installed by doing the following: 
+  - After cloning the repo onto your local machine, in your terminal, enter "node index.js." 
+  - Also make sure you have downloaded all node module packages, such as "inquirer" ; (To download inquirer, enter "npm i inquirer" into your terminal).
 
   ## Usage
   This project can assist developers to make quick, easy README files for their GitHub projects through their terminal
